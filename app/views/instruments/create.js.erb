@@ -1,4 +1,6 @@
-var instrument_name = document.createTextNode('<%= @instrument.name %>')
-var li = document.createElement('li')
-li.appendChild(instrument_name)
-document.body.appendChild(li)
+// var instrument_name = document.createTextNode('<%= @instrument.name %>')
+// var li = document.createElement('li')
+// li.appendChild(instrument_name)
+// document.querySelector('ul').appendChild(li)
+
+document.querySelector('ul').insertAdjacentHTML('beforeEnd','<%= escape_javascript render @instrument %>')
