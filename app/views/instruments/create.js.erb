@@ -2,5 +2,6 @@
 // var li = document.createElement('li')
 // li.appendChild(instrument_name)
 // document.querySelector('ul').appendChild(li)
-
+document.querySelector("#instrument_name").value = ''
 document.querySelector('ul').insertAdjacentHTML('beforeEnd','<%= escape_javascript render @instrument %>')
+console.log("<%= @instrument %>")

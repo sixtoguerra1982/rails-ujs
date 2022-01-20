@@ -1,6 +1,6 @@
- <li>
+ <li id="inst-<%= instrument.id %>">
     <%= instrument.name %>
     <%= link_to 'Show', instrument, remote: true %> |
     <%= link_to 'Edit', edit_instrument_path(instrument), remote: true %> |
-    <%= link_to 'Destroy', instrument_path(instrument), remote: true, method: :delete %>
+    <%= link_to 'Destroy', instrument_path(instrument), data: {remote: true, confirm: "Estas Seguro?"}, method: :delete %>
 </li>
